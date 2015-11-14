@@ -1,4 +1,4 @@
-# Clean Android Architecture for Padawans
+# Clean Android Architecture for Baby Padawans
 This repository shows how to separate layers of an application for newborn in Android world with a simple application based on Foursquare API.
 After this you will become a babyd Padawan and this means that you have made a great progress to become a real Padawan and then a JEDI.
 
