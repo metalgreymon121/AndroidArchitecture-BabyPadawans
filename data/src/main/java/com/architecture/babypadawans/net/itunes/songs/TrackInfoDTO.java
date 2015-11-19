@@ -10,11 +10,11 @@ public class TrackInfoDTO {
 
   @SerializedName("collectionName") private String collectionName;
 
-  @SerializedName("artworkUrl60") private String image;
+  @SerializedName("artworkUrl30") private String image;
 
-  @SerializedName("artworkUrl100") private String imageMedium;
+  @SerializedName("artworkUrl60") private String imageMedium;
 
-  private String imageBig;
+  @SerializedName("artworkUrl100") private String imageBig;
 
   public TrackInfoDTO() {
   }

@@ -8,39 +8,39 @@
     android:padding="@dimen/lv_row_padding"
     >
 
-  <ImageView
-      android:id="@+id/avatar"
-      android:layout_width="@dimen/lv_row_icon_width"
-      android:layout_height="@dimen/lv_row_icon_width"
-      android:paddingLeft="@dimen/lv_row_icon_padding"
-      android:paddingRight="@dimen/lv_row_icon_padding"
-      />
-  <RelativeLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      >
-    <TextView
-        android:id="@+id/trackName"
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/lv_row_icon_width"
+        android:layout_height="@dimen/lv_row_icon_width"
+        android:paddingLeft="@dimen/lv_row_icon_padding"
+        android:paddingRight="@dimen/lv_row_icon_padding"
+        />
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/lv_row_text_size"
-        android:textColor="@color/black"
-        android:gravity="center_vertical"
-        android:singleLine="true"
-        android:ellipsize="end"
-        />
+        >
+        <TextView
+            android:id="@+id/trackName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/lv_row_text_size"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
 
-    <TextView
-        android:id="@+id/trackArtistName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/trackName"
-        android:textSize="@dimen/lv_row_text_size_small"
-        android:textColor="@color/black"
-        android:gravity="center_vertical"
-        android:singleLine="true"
-        android:ellipsize="end"
-        />
-  </RelativeLayout>
+        <TextView
+            android:id="@+id/trackArtistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trackName"
+            android:textSize="@dimen/lv_row_text_size_small"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
 
 </LinearLayout>

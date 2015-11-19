@@ -7,5 +7,6 @@
   <color name="black">#000000</color>
   <color name="white">#FFFFFF</color>
 
+  <color name="main_color">#FFDDDDDD</color>
 
 </resources>

@@ -7,22 +7,22 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import com.architecture.babypadawans.R;
+import com.architecture.babypadawans.entities.song.SongEntity;
 import com.architecture.babypadawans.managers.SessionManager;
 import com.architecture.babypadawans.views.BaseActivity;
 
-public class SongsActivity extends BaseActivity {
+public class SongsActivity extends BaseActivity implements SongsFragment.SongsListener {
 
   private SessionManager sessionManager;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_fragment);
+    setContentView(R.layout.activity_main);
   }
 
   @Override
   protected void initializeActivity(Bundle savedInstanceState) {
     sessionManager = new SessionManager(this);
-    addFragment(R.id.fragmentContainer, SongsFragment.newInstance());
   }
 
   @Override public boolean onCreateOptionsMenu(Menu menu) {
@@ -50,5 +50,10 @@ public class SongsActivity extends BaseActivity {
    */
   public static Intent getCallingIntent(Context context) {
     return new Intent(context, SongsActivity.class);
+  }
+
+  @Override
+  public void onSongClicked(SongEntity songEntity) {
+    navigator.navigateToSongDetails(this, songEntity);
   }
 }

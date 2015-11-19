@@ -1,9 +1,11 @@
 package com.architecture.babypadawans.entities.song;
 
+import java.io.Serializable;
+
 /**
  * Created by Spiros I. Oikonomakis on 11/12/15.
  */
-public class SongEntity {
+public class SongEntity implements Serializable {
 
   private final String trackName;
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    tools:context="com.github.pedrovgs.effectiveandroidui.ui.activity.MainActivity">
+
+  <!-- TvShowCatalogFragment -->
+
+  <fragment
+      android:id="@+id/fragmentSongsCatalog"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:layout_marginRight="@dimen/secondary_margin"
+      class="com.architecture.babypadawans.views.songs.SongsFragment"
+      tools:context="com.github.pedrovgs.effectiveandroidui.ui.activity.MainActivity"/>
+
+  <!-- TvShowFragment -->
+
+  <fragment
+      android:id="@+id/fragmentSongView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      class="com.architecture.babypadawans.views.songs.show.SongShowFragment"
+      tools:context=".views.songs.SongsActivity"/>
+
+</LinearLayout>
